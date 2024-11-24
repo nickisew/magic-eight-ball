@@ -1,40 +1,40 @@
-var userName = '';
+var userName = "";
 
 // ternary expression - decides what to do if the user enters a name or not
 //if user enters a name like 'Jane', use string interpolation to log "Hello Jane" to the console
 //otherwise simply log hello!
 
-if (userName !== '') {
+if (userName) {
   console.log(`Hello ${userName}!`);
 } else {
   console.log("Hello!");
 }
 
-var userQuestion = '';
+var userQuestion =
+  "Will I pick the millionair maker crypto stock in the next year?";
 
-if (userQuestion = '') {
-    console.log(`Magic 8-ball, ${userQuestion}?`);
-}
+console.log (`${userName} asked, "${userQuestion}`);
 
-var randomNumber = Math.floor(Math.random() * 8);
+var randomNumber = Math.floor(Math.random() * 8); //random number 0 to 7
 
-var eightBall = '';
+let eightBall = "";
 
 if (randomNumber === 0) {
-    console.log('Never know til you try');
+  eightBall("Never know til you try");
 } else if (randomNumber === 1) {
-    console.log('Probably dude');
+  eightBall("Probably dude");
 } else if (randomNumber === 2) {
-    console.log('Nah fam that aint happenin');
+  eightBall("Nah fam that aint happenin");
 } else if (randomNumber === 3) {
-    console.log('For sure homie');
+  eightBall("For sure homie");
 } else if (randomNumber === 4) {
-    console.log('Ummm sorry not sure');
+  eightBall("Ummm sorry not sure");
 } else if (randomNumber === 5) {
-    console.log('Not in a million years');
+  eightBall("Not in a million years");
 } else if (randomNumber === 6) {
-    console.log('looks likely!');
+  eightBall("looks likely!");
 } else if (randomNumber === 7) {
-    console.log('Yes dudeee');
+  eightBall("Yes dudeee");
 }
 
+console.log($(eightBall));
